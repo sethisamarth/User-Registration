@@ -10,8 +10,8 @@ namespace UserRegistration
             while (true)
             {
                 Pattern p = new Pattern();
-                Console.WriteLine("Enter your Email");
-                var check = p.ValidateEmail(Console.ReadLine());
+                Console.WriteLine("Enter your Mobile Number");
+                var check = p.ValidateMobileNumber(Console.ReadLine());
                 Console.WriteLine(check);
 
             }

@@ -22,5 +22,10 @@ namespace UserRegistration
         {
             return Regex.IsMatch(email, Regex_Email);
         }
+        public static string Regex_MobileNumber= @"^[0-9]{2}\s[0-9]{10}$";
+        public bool ValidateMobileNumber(string mobileNumber)
+        {
+            return Regex.IsMatch(mobileNumber, Regex_MobileNumber);
+        }
     }
 }

@@ -27,5 +27,10 @@ namespace UserRegistration
         {
             return Regex.IsMatch(mobileNumber, Regex_MobileNumber);
         }
+        public static string Regex_Password= ".{8,}"; //rule 1
+        public bool ValidatePassword(string password)
+        {
+            return Regex.IsMatch(password, Regex_Password);
+        }
     }
 }

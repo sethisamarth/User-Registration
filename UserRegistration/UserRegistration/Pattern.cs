@@ -17,5 +17,10 @@ namespace UserRegistration
         {
             return Regex.IsMatch(lastName, Regex_LastName);
         }
+        public static string Regex_Email = @"^[a-zA-Z]{3}[a-zA-Z\.]*[@][a-z]{2}[\.][a-z]{2}[\.a-z]*$";
+        public bool ValidateEmail(string email)
+        {
+            return Regex.IsMatch(email, Regex_Email);
+        }
     }
 }
